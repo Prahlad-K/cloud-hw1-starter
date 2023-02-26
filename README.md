@@ -1,10 +1,10 @@
 # Chatbot Dining Concierge #
-Built by Team Members: 
-Name: Suchit Sahoo, UNI: ss6630
+Built by Team Members:  
+Name: Suchit Sahoo, UNI: ss6630  
 Name: Prahlad Koratamaddi, UNI: pk2743
 
 ## S3 Front-end URL ##
-[S3 Front-end URL](https://s3.amazonaws.com/static.chatbot/cloud-hw1-starter/chat.html)
+[https://s3.amazonaws.com/static.chatbot/cloud-hw1-starter/chat.html](https://s3.amazonaws.com/static.chatbot/cloud-hw1-starter/chat.html)
 
 ## About ##
 This is the final submission repository to satisfy the requirements of Assignment 1 in Cloud Computing and Big Data, taught by Prof. Sambit Sahu in Spring 2023 at Columbia University in the City of New York.
