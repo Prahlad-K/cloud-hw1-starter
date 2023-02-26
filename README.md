@@ -11,7 +11,7 @@ This is the final submission repository to satisfy the requirements of Assignmen
 
 ### Directory Structure: ###
 1. All front-end code files are in the cloud-hw1-starter folder, in the same way as originally provided.
-2. LF0.py, LF1.py and LF2.py are the lambda functions which are in the cloud-hw1-starter folder.
+2. LF0, LF1 and LF2 zip files are the lambda functions deployment packages included in the cloud-hw1-starter folder.
 3. "AI Customer Service API-testProd-swagger.yaml" file in the cloud-hw1-starter folder is the YAML file generated through API Gateway.
 4. "YelpScraper.py" in the cloud-hw1-starter folder is the Yelp Scraper script.
 
