@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   $(window).load(function() {
     $messages.mCustomScrollbar();
-    insertResponseMessage('Hi there, I\'m your personal Concierge. How can I help?');
+    //insertResponseMessage('Hi there, I\'m your personal Concierge. How can I help?');
   });
 
   function updateScrollbar() {
@@ -27,16 +27,20 @@ $(document).ready(function() {
 
   function callChatbotApi(message) {
     // params, body, additionalParams
+    var sessionID = window.sessionStorage.getItem('conversationID');
+    if(Object.is(sessionID, null))
+      sessionID = "";
+    
     return sdk.chatbotPost({}, {
       messages: [{
         type: 'unstructured',
         unstructured: {
           text: message
         }
-      }]
+      }],
+      sessionID : sessionID
     }, {});
   }
-
   function insertMessage() {
     msg = $('.message-input').val();
     if ($.trim(msg) == '') {
@@ -50,7 +54,7 @@ $(document).ready(function() {
     callChatbotApi(msg)
       .then((response) => {
         console.log(response);
-        var data = response.data;
+        var data = response.data.body;
 
         if (data.messages && data.messages.length > 0) {
           console.log('received ' + data.messages.length + ' messages');
