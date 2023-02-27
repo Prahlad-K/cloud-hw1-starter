@@ -14,6 +14,8 @@ This is the final submission repository to satisfy the requirements of Assignmen
 2. LF0, LF1 and LF2 zip files are the lambda functions deployment packages included in the cloud-hw1-starter folder.
 3. "AI Customer Service API-testProd-swagger.yaml" file in the cloud-hw1-starter folder is the YAML file generated through API Gateway.
 4. "YelpScraper.py" in the cloud-hw1-starter folder is the Yelp Scraper script.
+5. "OpenSearchIndexingPrep.py" in the cloud-hw1-starter folder is the script we used for uploading data to OpenSearch.
+6. "insertDynamoDB" is a zip file in the cloud-hw1-starter folder consisting of a lambda function which we used for uploading data to DynamoDB.
 
 ## Extra Credit Workflow ##
 We use the browser's session ID to identify a user's conversation and store the session ID and corresponding recommendations in DynamoDB. 
